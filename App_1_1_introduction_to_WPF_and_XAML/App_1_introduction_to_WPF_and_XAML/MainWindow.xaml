@@ -1,0 +1,30 @@
+﻿<Window x:Class="App_1_introduction_to_WPF_and_XAML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_1_introduction_to_WPF_and_XAML"
+        mc:Ignorable="d"
+        Title="ololo" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.439,0.649">
+        <Rectangle Fill="RosyBrown"></Rectangle>
+        <TextBox Name="text_box_1" 
+                 Width="150" 
+                 Height="50" Margin="108,149,534,220"/>
+        <Button Name="button_1" Content="Button me!"
+                Height="60"
+                Click="Button_Click" RenderTransformOrigin="1.901,2.594" Margin="108,228,534,131"/>
+        <StackPanel>
+            <Rectangle Fill="AliceBlue" Width="100" Height="100"></Rectangle>
+            <Rectangle Width="100" Height="100" Margin="20">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <GradientStop Color="CadetBlue" Offset="0"></GradientStop>
+                        <GradientStop Color="Yellow" Offset="1"></GradientStop>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </StackPanel>
+        
+    </Grid>
+</Window>
