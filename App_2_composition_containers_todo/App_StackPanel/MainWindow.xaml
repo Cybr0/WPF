@@ -1,0 +1,15 @@
+﻿<Window x:Class="App_StackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_StackPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Background="AliceBlue" Padding="10" Margin="10">TextBlock 1</TextBlock>
+        <TextBlock Background="Beige" Padding="10" Margin="10">TextBlock 2</TextBlock>
+        <TextBlock Background="SaddleBrown" Padding="10" Margin="10">TextBlock 3</TextBlock>
+        <TextBlock Background="Wheat" Padding="10" Margin="10">TextBlock 4</TextBlock>
+    </StackPanel>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="myApp2_grid_sizes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:myApp2_grid_sizes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Background="LightBlue" Width="1000">TextBlock 1 (Height="100")</TextBlock>
+        <TextBlock Grid.Row="1"
+                   Background="LightGreen" Width="1000">TextBlock 2 (Height="*")</TextBlock>
+        <TextBlock Grid.Row="2"
+                   Background="LightCyan" Width="Auto" Height="50">TextBlock 3 (Height="Auto")</TextBlock>
+    </Grid>
+</Window>
